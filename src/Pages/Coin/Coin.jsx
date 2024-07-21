@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Coin.css";
 import { useParams } from "react-router-dom";
 import { Coincontext } from "../../Context/CoinContext";
+
 function Coin() {
   const { coinId } = useParams();
   const [coinData, setCoinData] = useState();
@@ -48,4 +49,5 @@ function Coin() {
     );
   }
 }
+
 export default Coin;
